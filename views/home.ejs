@@ -3,9 +3,12 @@
     <span class="material-icons md-48 md-16" onclick="location.replace('setting')">person</span>
     <img  class=questionmarks src="/images/finalquestionmarks.png" alt="questionmarks">
     <h1> Riddle Me </h1>
-    <button class="button name col-lg-3 col-md-3 col-xs-3 col-sm-3 center-block" onclick="window.location.href('questions')" href="/questions"> Start </button><br><br><br>
-    <button class="button name col-lg-3 col-md-3 col-xs-3 col-sm-3 center-block"> Leaderboard </button>
-    <script src="/js/index.js"></script>
+
+    <form action="/home" method="POST">
+        <button class="button name col-lg-3 col-md-3 col-xs-3 col-sm-3 center-block" name="home" value="start"> Start </button><br><br><br>
+        <button class="button name col-lg-3 col-md-3 col-xs-3 col-sm-3 center-block" name="home" value="leaderboard"> Leaderboard </button>    
+    </form>
+   <script src="/js/index.js"></script>
 </body>
 </html>
 
