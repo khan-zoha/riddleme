@@ -1,0 +1,70 @@
+<%-include("partials/header");-%>
+<body>
+    <span class="material-icons md-48 md-16" onclick="location.replace('homeU')">arrow_back</span>
+    <br><br><br><br><br>
+    <!-- <img  class="underC" src="/images/under-construction-29013.png" alt="questionmarks" height="550" width="550"><br> -->
+    <h1> ڈیجیٹل خواندگی سروے </h1><br><br>
+    <form action="/DLsurveyU" method="POST">
+        <div class="obj1 name col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <p> کیا آپ وائی فائی سے رابطہ قائم کرنے اور/یا موبائل ڈیٹا آن کر سکتے ہیں؟ </p>
+        </div>
+        <br><br>
+        <select class="box gender answer col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block" name="wifiVSdata"  dir="rtl">
+            <option class="opt", disabled selected>آپشن منتخب کریں</option>
+            <option  value="Preschool"> ہاں ، میں دونوں کر سکتا/سکتی ہوں۔ </option>
+            <option  value="Primary "> ہاں ، میں صرف وائی فائی سے رابطہ قائم کر سکتا/سکتی ہوں۔</option>
+            <option  value="Middle"> ہاں ، میں صرف موبائل ڈیٹا سے رابطہ قائم کر سکتا/سکتی ہوں۔ </option>
+            <option  value="Matric"> نہیں ، میں بھی دونوں کام نہیں کر سکتا/سکتی۔ </option>
+        </select>
+        <br><br><br>
+        
+        <div class="obj1 name col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <p> کیا آپ گوگل پر سرچ کر سکتے ہیں؟ </p>
+        </div>
+        <br><br>
+        <select class="box gender answer col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block" name="google"  dir="rtl">
+            <option class="opt", disabled selected>آپشن منتخب کریں</option>
+            <option  value="Yes"> جی ہاں </option>
+            <option  value="No"> نہیں </option>
+        </select>
+        <br><br><br>
+
+        <div class="obj1 name col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <p> کیا آپ عام طور پر مدد کے بغیر سوشل میڈیا ایپس استعمال کر سکتے ہیں؟ </p>
+        </div>
+        <br><br>
+        <select class="box gender answer col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block" name="assistance"  dir="rtl">
+            <option class="opt", disabled selected>آپشن منتخب کریں</option>
+            <option  value="Yes"> جی ہاں </option>
+            <option  value="No"> نہیں </option>
+        </select>
+        <br><br><br>
+
+        <div class="obj1 name col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <p> وہ تمام سرگرمیاں منتخب کریں جو آپ سوشل میڈیا پر کرتے ہیں۔ </p>
+        </div>
+        <br><br>
+        <div class="box gender rightAlign col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <label  dir="rtl" class="container">
+                <input type="checkbox" name="activities" value="Viewing">
+                پوسٹس/ پیغامات/ تصاویر/ ویڈیوز/ نیوز آرٹیکل دیکھنا۔
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <label  dir="rtl" class="container">
+                <input  type="checkbox" name="activities" value="Sharing">
+                پوسٹس/ پیغامات/ تصاویر/ ویڈیوز/ نیوز آرٹیکلز شیئر کرنا۔
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <label  dir="rtl" class="container">
+                <input type="checkbox" name="activities" value="Creating">
+                پوسٹس/ پیغامات/ تصاویر/ ویڈیوز/ نیوز آرٹیکلز خود بنانا۔
+                <!-- <span class="checkmark"></span> -->
+            </label>
+        </div>
+        <br><br><br>
+        <button class="button name agree col-lg-2 col-md-2 col-xs-2 col-sm-2 center-block" onclick="location.replace('answersU')"> یندراج کریں </button><br><br><br>
+    </form>
+    <!-- <button class="button name col-lg-3 col-md-3 col-xs-3 col-sm-3 center-block"> Leaderboard </button> --> 
+    <script src="/js/index.js"></script>
+</body>
+</html>

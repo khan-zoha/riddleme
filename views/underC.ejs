@@ -1,0 +1,70 @@
+<%-include("partials/header");-%>
+<body>
+    <span class="material-icons md-48 md-16" onclick="location.replace('home')">arrow_back</span>
+    <br><br><br><br><br>
+    <!-- <img  class="underC" src="/images/under-construction-29013.png" alt="questionmarks" height="550" width="550"><br> -->
+    <h1> Digital Literacy Survey </h1><br><br>
+    <form action="/underC" method="POST">
+        <div class="obj1 name col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <p> Are you able to connect to Wi-Fi and/or turn on mobile data? </p>
+        </div>
+        <br><br>
+        <select class="box gender answer col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block" name="wifiVSdata">
+            <option class="opt", disabled selected>Select Option</option>
+            <option  value="Yes-both"> Yes, I can do both </option>
+            <option  value="Yes-wifi"> Yes, I can connect to Wi-Fi only </option>
+            <option  value="Yes-data"> Yes, I can connect to mobile data only </option>
+            <option  value="No"> No, I cannot do either </option>
+        </select>
+        <br><br><br>
+        
+        <div class="obj1 name col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <p> Are you able to search on Google? </p>
+        </div>
+        <br><br>
+        <select class="box gender answer col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block" name="google">
+            <option class="opt", disabled selected>Select Option</option>
+            <option  value="Yes"> Yes </option>
+            <option  value="No"> No </option>
+        </select>
+        <br><br><br>
+
+        <div class="obj1 name col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <p> Are you able to use social media apps generally without assistance? </p>
+        </div>
+        <br><br>
+        <select class="box gender answer col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block" name="assistance">
+            <option class="opt", disabled selected>Select Option</option>
+            <option  value="Yes"> Yes </option>
+            <option  value="No"> No </option>
+        </select>
+        <br><br><br>
+
+        <div class="obj1 name col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <p> Please select all the activities you perform on social media. </p>
+        </div>
+        <br><br>
+        <div class="box gender col-lg-8 col-md-8 col-xs-8 col-sm-8 center-block">
+            <label class="container">
+                <input type="checkbox" name="activities" value="Viewing">
+                Viewing posts/ messages/ images/ videos/ news articles
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <label class="container">
+                <input type="checkbox" name="activities" value="Sharing">
+                Sharing posts/ messages/ images/ videos/ news articles
+                <!-- <span class="checkmark"></span> -->
+            </label>
+            <label class="container">
+                <input type="checkbox" name="activities" value="Creating">
+                Creating posts/ messages/ images/ videos/ news articles
+                <!-- <span class="checkmark"></span> -->
+            </label>
+        </div>
+        <br><br><br>
+        <button class="button name agree col-lg-2 col-md-2 col-xs-2 col-sm-2 center-block" onclick="location.replace('answers')"> Submit </button><br><br><br>
+    </form>
+    <!-- <button class="button name col-lg-3 col-md-3 col-xs-3 col-sm-3 center-block"> Leaderboard </button> --> 
+    <script src="/js/index.js"></script>
+</body>
+</html>

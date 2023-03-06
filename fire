@@ -1,0 +1,14 @@
+import firebase from 'firebase'
+
+var firebaseConfig = {
+    apiKey: "AIzaSyA5pRVDTu_-igUdmyVfyyiv7JIhMTiQjSA",
+    authDomain: "crt-game.firebaseapp.com",
+    projectId: "crt-game",
+    storageBucket: "crt-game.appspot.com",
+    messagingSenderId: "671633668607",
+    appId: "1:671633668607:web:4afb95bb255e2287fd8fca",
+    measurementId: "G-J5RGGN76EF"
+};
+  // Initialize Firebase
+const fire = firebase.initializeApp(firebaseConfig);
+export default fire;
