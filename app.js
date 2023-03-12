@@ -161,14 +161,6 @@ app.get("/leaderboard",(req,res)=>{
     res.render("leaderboard");
 });
 
-app.get("/consent",(req,res)=>{
-    res.render("consent");
-});
-
-app.get("/consentU",(req,res)=>{
-    res.render("consentU");
-});
-
 app.get("/underC",(req,res)=>{
     res.render("underC");
 });
@@ -294,7 +286,7 @@ app.post("/language",(req,res)=>{
             
         });
 
-        res.redirect("/consent");
+        res.redirect("/setting");
     }
     else{
         db.collection("CRT_questions").doc("urdu_crt_Qs").get().then((snapshot) => {
@@ -326,7 +318,7 @@ app.post("/language",(req,res)=>{
             hardTypeN = snapshot.data().hard_num;
             
         });
-        res.redirect("/consentU");
+        res.redirect("/settingU");
     }
 });
 
@@ -487,7 +479,7 @@ app.get("/answersU",(req,res)=>{
             correctAnswers = [];
         });
 
-        //restarting the game 
+        // restarting the game 
         isStarted =  false;
         nextCount = 0;
         score = 0;
